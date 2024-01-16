@@ -187,7 +187,7 @@ export { PassThroughWebSocketHandlerOptions };
 
 export class PassThroughWebSocketHandler extends PassThroughWebSocketHandlerDefinition {
 
-    private wsServer?: WebSocket.Server;
+    protected wsServer?: WebSocket.Server;
 
     private initializeWsServer() {
         if (this.wsServer) return;
